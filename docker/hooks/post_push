@@ -1,0 +1,31 @@
+#!/bin/bash
+# https://windsock.io/automated-docker-image-builds-with-multiple-tags/
+
+set -e
+
+[[ "${IMAGE_NAME#*:}" == 'latest' ]] && exit
+
+TagAndPushImages()
+{
+  while read ImageName NewImageName; do
+    docker tag "$ImageName" "$NewImageName"
+    docker push "$NewImageName"
+  done
+}
+
+ParseImageName()
+{
+  local ImageName="$1"; shift
+  local RepoName="${ImageName%%:*}"
+  local TagName="${ImageName#*:}"
+  local TagLastPart="${TagName##*[-.]}"
+  local TagRest="${TagName%[-.]*}"
+
+  [[ "$TagName" == "$TagRest" || -z "$TagLastPart" ]] && return
+  [[ -n "$TagRest" ]] && echo "$ImageName $RepoName:$TagRest"
+  [[ "$TagLastPart" == 'release' ]] && echo "$ImageName $RepoName:latest"
+
+  ParseImageName "$RepoName:$TagRest"
+}
+
+ParseImageName "$IMAGE_NAME" | TagAndPushImages

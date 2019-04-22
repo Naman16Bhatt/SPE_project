@@ -8,6 +8,9 @@ import sys
 import requests
 
 
+
+print("\n\n\n\nEntered")
+
 conf = SparkConf()
 conf.setAppName("Economics")
 # create spark context with the above configuration
@@ -38,7 +41,7 @@ uber_temp= uber_temp.reduceByKey(add).sortBy(lambda a: a[0])
 # remove this line before submitting the code.
 print("Number of uber rides per month")
 print(uber_temp.collect())
-#uber_temp.saveAsTextFile("/uber_economics_processed")
+uber_temp.saveAsTextFile("/uber_economics_processed1")
 
 
 # read the csv file
@@ -52,7 +55,7 @@ taxi_temp= taxi_temp.reduceByKey(add).sortBy(lambda a: a[0])
 
 print("Number of taxi rides per month")
 print(taxi_temp.collect())
-taxi_temp.saveAsTextFile("/taxi_economics_processed")
+taxi_temp.saveAsTextFile("/taxi_economics_processed1")
 
 
 
