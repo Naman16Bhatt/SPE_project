@@ -25,3 +25,10 @@
 2019-04-22 21:56:39,000 | /home/vikas/anaconda3/lib/python3.6/site-packages/werkzeug/_internal.py:88 | _log | INFO |  * Debugger PIN: 701-082-947 
 2019-04-22 21:57:17,145 | /home/vikas/anaconda3/lib/python3.6/site-packages/werkzeug/_internal.py:88 | _log | INFO | 127.0.0.1 - - [22/Apr/2019 21:57:17] "GET / HTTP/1.1" 200 - 
 2019-04-22 21:58:08,542 | /home/vikas/anaconda3/lib/python3.6/site-packages/werkzeug/_internal.py:88 | _log | INFO | 127.0.0.1 - - [22/Apr/2019 21:58:08] "GET /data1? HTTP/1.1" 200 - 
+2019-04-22 22:30:23,963 | /home/naman/yes/lib/python2.7/site-packages/werkzeug/_internal.py:88 | _log | INFO |  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit) 
+2019-04-22 22:30:23,965 | /home/naman/yes/lib/python2.7/site-packages/werkzeug/_internal.py:88 | _log | INFO |  * Restarting with stat 
+2019-04-22 22:30:25,096 | /home/naman/yes/lib/python2.7/site-packages/werkzeug/_internal.py:88 | _log | WARNING |  * Debugger is active! 
+2019-04-22 22:30:25,113 | /home/naman/yes/lib/python2.7/site-packages/werkzeug/_internal.py:88 | _log | INFO |  * Debugger PIN: 321-801-135 
+2019-04-22 22:30:57,600 | /home/naman/yes/lib/python2.7/site-packages/werkzeug/_internal.py:88 | _log | INFO | 127.0.0.1 - - [22/Apr/2019 22:30:57] "GET / HTTP/1.1" 200 - 
+2019-04-22 22:30:57,966 | /home/naman/yes/lib/python2.7/site-packages/werkzeug/_internal.py:88 | _log | INFO | 127.0.0.1 - - [22/Apr/2019 22:30:57] "GET /favicon.ico HTTP/1.1" 404 - 
+2019-04-22 22:31:05,091 | /home/naman/yes/lib/python2.7/site-packages/werkzeug/_internal.py:88 | _log | INFO | 127.0.0.1 - - [22/Apr/2019 22:31:05] "GET /data2 HTTP/1.1" 200 - 
