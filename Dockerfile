@@ -61,7 +61,7 @@ RUN pip install folium
 
 COPY ./Economics.py /Economics.py
 COPY ./Combined/uber_combined.csv /uber_combined.csv
-COPY ./Combined/taxi_combined.csv /taxi_combined.csv
+#COPY ./Combined/taxi_combined.csv /taxi_combined.csv
 COPY ./timescaleplot.py /timescaleplot.py
 COPY ./sparkplot-residential-analysis.py /sparkplot-residential-analysis.py
 COPY ./newyorkborough.json  /newyorkborough.json
