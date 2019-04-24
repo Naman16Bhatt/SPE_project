@@ -42,7 +42,7 @@ uber_temp= uber_temp.reduceByKey(add).sortBy(lambda a: a[0])
 print("Number of uber rides per month")
 print(uber_temp.collect())
 print("almost")
-uber_temp.saveAsTextFile("/uber_economics_processed_combined")
+uber_temp.saveAsTextFile("/home/naman/spe/SPE_project/SPEflask/uber_economics_processed_combined")
 
 
 # read the csv file
