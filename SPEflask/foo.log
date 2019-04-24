@@ -32,3 +32,23 @@
 2019-04-22 22:30:57,600 | /home/naman/yes/lib/python2.7/site-packages/werkzeug/_internal.py:88 | _log | INFO | 127.0.0.1 - - [22/Apr/2019 22:30:57] "GET / HTTP/1.1" 200 - 
 2019-04-22 22:30:57,966 | /home/naman/yes/lib/python2.7/site-packages/werkzeug/_internal.py:88 | _log | INFO | 127.0.0.1 - - [22/Apr/2019 22:30:57] "GET /favicon.ico HTTP/1.1" 404 - 
 2019-04-22 22:31:05,091 | /home/naman/yes/lib/python2.7/site-packages/werkzeug/_internal.py:88 | _log | INFO | 127.0.0.1 - - [22/Apr/2019 22:31:05] "GET /data2 HTTP/1.1" 200 - 
+2019-04-22 23:37:43,400 | /home/naman/yes/lib/python2.7/site-packages/werkzeug/_internal.py:88 | _log | INFO |  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit) 
+2019-04-22 23:37:43,434 | /home/naman/yes/lib/python2.7/site-packages/werkzeug/_internal.py:88 | _log | INFO |  * Restarting with stat 
+2019-04-22 23:37:44,421 | /home/naman/yes/lib/python2.7/site-packages/werkzeug/_internal.py:88 | _log | WARNING |  * Debugger is active! 
+2019-04-22 23:37:44,442 | /home/naman/yes/lib/python2.7/site-packages/werkzeug/_internal.py:88 | _log | INFO |  * Debugger PIN: 339-319-685 
+2019-04-22 23:37:46,833 | /home/naman/yes/lib/python2.7/site-packages/werkzeug/_internal.py:88 | _log | INFO | 127.0.0.1 - - [22/Apr/2019 23:37:46] "GET / HTTP/1.1" 200 - 
+2019-04-22 23:38:00,381 | /home/naman/yes/lib/python2.7/site-packages/werkzeug/_internal.py:88 | _log | INFO | 127.0.0.1 - - [22/Apr/2019 23:38:00] "GET /data2 HTTP/1.1" 200 - 
+2019-04-22 23:38:02,608 | /home/naman/yes/lib/python2.7/site-packages/werkzeug/_internal.py:88 | _log | INFO | 127.0.0.1 - - [22/Apr/2019 23:38:02] "GET /taximonthly HTTP/1.1" 200 - 
+2019-04-22 23:38:19,675 | /home/naman/yes/lib/python2.7/site-packages/werkzeug/_internal.py:88 | _log | INFO | 127.0.0.1 - - [22/Apr/2019 23:38:19] "GET /data1 HTTP/1.1" 200 - 
+2019-04-22 23:38:21,197 | /home/naman/yes/lib/python2.7/site-packages/werkzeug/_internal.py:88 | _log | INFO | 127.0.0.1 - - [22/Apr/2019 23:38:21] "GET /uberbusiness HTTP/1.1" 200 - 
+2019-04-22 23:38:21,341 | /home/naman/yes/lib/python2.7/site-packages/werkzeug/_internal.py:88 | _log | INFO | 127.0.0.1 - - [22/Apr/2019 23:38:21] "GET /static/uber_business.png HTTP/1.1" 200 - 
+2019-04-24 17:15:09,568 | /usr/local/lib/python3.6/dist-packages/werkzeug/_internal.py:122 | _log | INFO |  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit) 
+2019-04-24 17:15:09,568 | /usr/local/lib/python3.6/dist-packages/werkzeug/_internal.py:122 | _log | INFO |  * Restarting with stat 
+2019-04-24 17:15:10,863 | /usr/local/lib/python3.6/dist-packages/werkzeug/_internal.py:122 | _log | WARNING |  * Debugger is active! 
+2019-04-24 17:15:11,137 | /usr/local/lib/python3.6/dist-packages/werkzeug/_internal.py:122 | _log | INFO |  * Debugger PIN: 232-181-503 
+2019-04-24 17:15:23,946 | /usr/local/lib/python3.6/dist-packages/werkzeug/_internal.py:122 | _log | INFO | 127.0.0.1 - - [24/Apr/2019 17:15:23] "GET /taxiweek HTTP/1.1" 200 - 
+2019-04-24 17:15:24,096 | /usr/local/lib/python3.6/dist-packages/werkzeug/_internal.py:122 | _log | INFO | 127.0.0.1 - - [24/Apr/2019 17:15:24] "GET /static/taxi_week.png HTTP/1.1" 200 - 
+2019-04-24 17:15:27,631 | /usr/local/lib/python3.6/dist-packages/werkzeug/_internal.py:122 | _log | INFO | 127.0.0.1 - - [24/Apr/2019 17:15:27] "GET /uberbusiness HTTP/1.1" 200 - 
+2019-04-24 17:15:27,789 | /usr/local/lib/python3.6/dist-packages/werkzeug/_internal.py:122 | _log | INFO | 127.0.0.1 - - [24/Apr/2019 17:15:27] "GET /static/uber_business.png HTTP/1.1" 200 - 
+2019-04-24 17:15:34,288 | /usr/local/lib/python3.6/dist-packages/werkzeug/_internal.py:122 | _log | INFO | 127.0.0.1 - - [24/Apr/2019 17:15:34] "GET /taxiweather HTTP/1.1" 200 - 
+2019-04-24 17:15:54,706 | /usr/local/lib/python3.6/dist-packages/werkzeug/_internal.py:122 | _log | INFO | 127.0.0.1 - - [24/Apr/2019 17:15:54] "GET /uberweather HTTP/1.1" 200 - 
