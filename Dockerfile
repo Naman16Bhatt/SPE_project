@@ -74,7 +74,7 @@ WORKDIR /app
 
 #CMD ["spark-submit","Economics.py"]
 
-ENTRYPOINT service ssh start && /usr/hadoop-3.0.0/sbin/start-all.sh  &&  hdfs dfs -put /uber_combined.csv /  && spark-submit /Economics.py && bash 
+ENTRYPOINT service ssh start && /usr/hadoop-3.0.0/sbin/start-all.sh  &&  hdfs dfs -put /uber_combined.csv /  && spark-submit /Economics.py 
 
 # Hdfs ports
 EXPOSE 9820 9865 9866 9867 9868 9869 9870 9871 9000
