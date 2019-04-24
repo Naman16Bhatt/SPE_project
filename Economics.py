@@ -41,21 +41,22 @@ uber_temp= uber_temp.reduceByKey(add).sortBy(lambda a: a[0])
 # remove this line before submitting the code.
 print("Number of uber rides per month")
 print(uber_temp.collect())
+print("almost")
 uber_temp.saveAsTextFile("./uber_economics_processed_combined")
-'''
+
 
 # read the csv file
-taxiFile = sc.textFile("/taxi_combined.csv")
+#taxiFile = sc.textFile("/taxi_combined.csv")
 
 # for each line in the Uber file, this line will map the pickup_date to 2, where the pickup date only contains the month and the year.
-taxi_temp = taxiFile.map(lambda line: line.split(",")).map(lambda x : mapper(x,1))
+#taxi_temp = taxiFile.map(lambda line: line.split(",")).map(lambda x : mapper(x,1))
 
 # reduce by key to get the total number of rides in NYC in a month
-taxi_temp= taxi_temp.reduceByKey(add).sortBy(lambda a: a[0])
+#taxi_temp= taxi_temp.reduceByKey(add).sortBy(lambda a: a[0])
 
-print("Number of taxi rides per month")
-print(taxi_temp.collect())
-taxi_temp.saveAsTextFile("/SPEflask/taxi_economics_processed_combined")'''
+#print("Number of taxi rides per month")
+#print(taxi_temp.collect())
+#taxi_temp.saveAsTextFile("/SPEflask/taxi_economics_processed_combined")'''
 
 
 
