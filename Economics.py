@@ -42,7 +42,7 @@ uber_temp= uber_temp.reduceByKey(add).sortBy(lambda a: a[0])
 print("Number of uber rides per month")
 print(uber_temp.collect())
 uber_temp.saveAsTextFile("/SPEflask/uber_economics_processed_combined")
-
+'''
 
 # read the csv file
 taxiFile = sc.textFile("/taxi_combined.csv")
@@ -55,7 +55,7 @@ taxi_temp= taxi_temp.reduceByKey(add).sortBy(lambda a: a[0])
 
 print("Number of taxi rides per month")
 print(taxi_temp.collect())
-taxi_temp.saveAsTextFile("/SPEflask/taxi_economics_processed_combined")
+taxi_temp.saveAsTextFile("/SPEflask/taxi_economics_processed_combined")'''
 
 
 
