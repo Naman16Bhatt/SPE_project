@@ -27,7 +27,7 @@ def myfunc2():
     plt.xticks(rotation=20,fontsize=8)
     #plt.show()
     plt.savefig('static/taxi_buisness.png')
-'''
+
 def myfunc3():
     data = open("taxi_economics_processed_combined", "r")
     results = []
@@ -94,13 +94,13 @@ def myfunc8():
     plt.xticks(rotation=20,fontsize=8)
     #plt.show()
     plt.savefig('static/uber_business.png')
-'''
+
 myfunc1()
 myfunc2()
 myfunc3()
-'''
+
 myfunc4()
 myfunc5()
 myfunc6()
 myfunc7()
-myfunc8()'''
+myfunc8()

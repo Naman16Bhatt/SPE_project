@@ -1,6 +1,6 @@
 from flask import Flask, render_template 
 import flask
-from examples import myfunc1,myfunc2,myfunc3#,myfunc4,myfunc5,myfunc6,myfunc7,myfunc8
+from examples import myfunc1,myfunc2,myfunc3,myfunc4,myfunc5,myfunc6,myfunc7,myfunc8
 #from flask_ngrok import run_with_ngrok
 
 import logging
