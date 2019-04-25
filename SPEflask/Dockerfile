@@ -37,9 +37,9 @@ RUN pip install matplotlib
 
 
 COPY . /app
-RUN export FLASK_APP=app.py
-#ENTRYPOINT [ "python" ]
+#RUN export FLASK_APP=app.py
+ENTRYPOINT python ./copy.py
 WORKDIR /app
-CMD [ "flask","run","--host","0.0.0.0" ]
+#CMD [ "flask","run","--host","0.0.0.0" ]
 
 
