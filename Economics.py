@@ -42,8 +42,15 @@ uber_temp= uber_temp.reduceByKey(add).sortBy(lambda a: a[0])
 print("Number of uber rides per month")
 print(uber_temp.collect())
 print("almost")
-f= open("uber_economics_processed_combined","w+")
+f= open("uber_economics_processed_co","w+")
+g= open("uber_economics_processed_com","w+")
+h= open("uber_economics_processed_comb.txt","w+")
+i= open("uber_economics_processed_combin.txt","w+")
 f.write(uber_temp.collect())
+g.write("uber_temp.collect()")
+h.write(uber_temp.collect())
+i.write("uber_temp.collect()")
+
 #uber_temp.saveAsTextFile("./uber_economics_processed_combined")
 
 
