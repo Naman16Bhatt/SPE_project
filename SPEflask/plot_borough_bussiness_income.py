@@ -1,10 +1,3 @@
-##########################################
-# EECS4415 Assignment 1                  #
-# Filename: dstat.py                     #
-# Author: NANAH JI, KOKO                 #
-# Email: koko96@my.yorku.com             #
-# eecs_num: 215168057                    #
-##########################################
 import matplotlib
 matplotlib.use('Agg')
 import sys

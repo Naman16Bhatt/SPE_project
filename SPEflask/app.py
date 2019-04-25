@@ -6,8 +6,8 @@ from examples import myfunc1,myfunc2,myfunc3,myfunc4,myfunc5,myfunc6,myfunc7,myf
 import logging
 from logging.handlers import RotatingFileHandler
 from flask import request
-
 app = Flask(__name__)
+
 #run_with_ngrok(app)
 @app.route("/")
 def home():
@@ -86,3 +86,13 @@ if __name__ == "__main__":
     handler.setFormatter(formatter)
     log.addHandler(handler)
     app.run(debug=True)
+
+@app.errorhandler(500)
+def internal_error(exception):
+    app.logger.error(exception)
+    return flask.make_response('server error', 500)
+
+@app.errorhandler(400)
+def handle_bad_request(e):
+    app.logger.info('Bad request', e)
+    return flask.make_response('bad request', 400)

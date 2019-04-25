@@ -1,0 +1,26 @@
+version: "3"
+
+services: 
+  web:
+    # build:
+    #   context: ./dockerFiles
+    #   dockerfile: smartstocks_django_dockerfile
+    image: namanbhatt16/pf
+ 
+
+    logging:
+      driver: syslog
+      options:
+        syslog-address: "tcp://172.17.0.4:8000"
+
+    ports: 
+      - 5000:5000
+
+    volumes: 
+      - ./:/app
+
+
+    # command: >
+    #  sh -c "flask run --host "\0.0.0.0\""
+
+

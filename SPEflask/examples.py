@@ -4,6 +4,7 @@ import sys
 import argparse
 import matplotlib.pyplot as plt
 from ast import literal_eval as make_tuple
+import time
 
 
 def myfunc1():
@@ -16,6 +17,9 @@ def myfunc1():
     plt.xticks(rotation=20,fontsize=8)
     #plt.show()
     plt.savefig('static/borough.png')
+    plt.clf()
+    data.flush()
+    data.close()
 
 def myfunc2():
     data = open("taxi_bussiness_processed_combined", "r")
@@ -27,6 +31,9 @@ def myfunc2():
     plt.xticks(rotation=20,fontsize=8)
     #plt.show()
     plt.savefig('static/taxi_buisness.png')
+    plt.clf()
+    data.flush()
+    data.close()
 
 def myfunc3():
     data = open("taxi_economics_processed_combined", "r")
@@ -38,6 +45,9 @@ def myfunc3():
     plt.xticks(rotation=20,fontsize=8)
     #plt.show()
     plt.savefig('static/taxi_economics.png')
+    plt.clf()
+    data.flush()
+    data.close()
 
 def myfunc4():
     data = open("uber_wethear_processed_combined", "r")
@@ -49,6 +59,9 @@ def myfunc4():
     plt.xticks(rotation=20,fontsize=8)
     #plt.show()
     plt.savefig('static/uber_weather.png')
+    plt.clf()
+    data.flush()
+    data.close()
 
 def myfunc5():
     data = open("taxi_wethear_processed_combined", "r")
@@ -60,6 +73,9 @@ def myfunc5():
     plt.xticks(rotation=20,fontsize=8)
     #plt.show()
     plt.savefig('static/taxi_weather.png')
+    plt.clf()
+    data.flush()
+    data.close()
 
 def myfunc6():
     data = open("weekdays_weekends_uber", "r")
@@ -71,6 +87,9 @@ def myfunc6():
     plt.xticks(rotation=20,fontsize=8)
     #plt.show()
     plt.savefig('static/uber_week.png')
+    plt.clf()
+    data.flush()
+    data.close()
 
 def myfunc7():
     data = open("weekdays_weekends_taxi", "r")
@@ -82,6 +101,9 @@ def myfunc7():
     plt.xticks(rotation=20,fontsize=8)
     #plt.show()
     plt.savefig('static/taxi_week.png')
+    plt.clf()
+    data.flush()
+    data.close()
 
 
 def myfunc8():
@@ -94,13 +116,15 @@ def myfunc8():
     plt.xticks(rotation=20,fontsize=8)
     #plt.show()
     plt.savefig('static/uber_business.png')
+    plt.clf()
+    data.flush()
+    data.close()
 
-myfunc1()
-myfunc2()
-myfunc3()
-
-myfunc4()
-myfunc5()
-myfunc6()
-myfunc7()
-myfunc8()
+#myfunc1()
+#myfunc2()
+#myfunc3()
+#myfunc4()
+#myfunc5()
+#myfunc6()
+#myfunc7()
+#myfunc8()
