@@ -1,6 +1,6 @@
 
 FROM gettyimages/spark:2.3.1-hadoop-3.0
-LABEL maintainer="EECS York University <eecs.lassonde.yorku.ca>"
+#LABEL maintainer="EECS York University <eecs.lassonde.yorku.ca>"
 
 RUN apt-get update
 RUN apt-get -y install nano curl openssh-server openssh-client
